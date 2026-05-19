@@ -3,6 +3,17 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+
+  server: {
+    host: '0.0.0.0',   // ✅ required for Docker dev mode
+    port: 5173
+  },
+
+  preview: {
+    host: '0.0.0.0',   // ✅ required if using vite preview in container
+    port: 4173
+  },
+
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
