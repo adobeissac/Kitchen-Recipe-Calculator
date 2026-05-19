@@ -10,7 +10,7 @@ export default defineConfig({
   },
 
   preview: {
-    host: '0.0.0.0',   // ✅ required if using vite preview in container
+    host: '0.0.0.0',   // ✅ required if using vite preview in container thi is good
     port: 4173
   },
 
